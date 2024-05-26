@@ -1,0 +1,864 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.close-menu{
+    display: none;
+}
+.menu {
+    display: none;
+}
+
+:root {
+    /* ### Primary */
+
+    --clr-White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+    --modified: rgba(0, 0, 0, 63%);
+}
+
+body {
+    font-family: 'alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--clr-White);
+    /* background-color: red; */
+}
+
+nav {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    /* top: 0px; */
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .nav-items {} */
+
+ul {
+    height: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    height: 100%;
+    color: hsla(0, 0%, 100%, 0.975);
+    list-style: none;
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+}
+
+li:hover {
+    cursor: pointer;
+
+    border-bottom: 2px solid var(--clr-White);
+
+}
+
+main {
+    width: 100%;
+    /* position: relative; */
+
+}
+
+.main-image {
+    background: rgba(0, 0, 0, 0.424) url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg) center center/cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    /* backdrop-filter:30%; */
+}
+
+.anykind {
+    height: 100vh;
+}
+
+/* .main-image{
+    width: 100%;
+    height: 100%; */
+.hero {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-child {
+    width: 80%;
+    height: 100%;
+}
+
+
+.h1 {
+    height: 100%;
+
+    display: flex;
+    align-items: end;
+    padding-bottom: 100px;
+    width: 60%;
+}
+
+.div {
+    font-family: 'josefin sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: var(--clr-White);
+    border: 2px solid var(--clr-White);
+    padding: 40px;
+    font-weight: 200;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.after-hero {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-hero-child {
+    position: relative;
+    width: 85%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 70%;
+}
+
+.after-text {
+    background-color: var(--clr-White);
+    color: var(--Black);
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 80px;
+    flex-direction: column;
+    position: relative;
+}
+
+.after-text-head {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'josefin sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.after-text-p {
+    font-stretch: 150%;
+    line-height: 1.5;
+    color: var(--DarkGray);
+}
+
+.after-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 70%;
+    background: url(/loopstudios-landing-page-main/images/desktop/image-interactive.jpg) center center/cover;
+    z-index: 0;
+}
+
+.after-heroo {
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.after-heroo-child {
+    width: 80%;
+    padding-block: 100px;
+}
+
+.after-heroo-first {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.heading-befor-grid {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'josefin sans', sans-serif;
+    font-style: normal;
+}
+
+.button-befor-grid {
+    width: 15%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--Black);
+    font-family: 'josefin sans', sans-serif;
+}
+
+.button-befor-grid button {
+    font-weight: 600;
+    letter-spacing: 3px;
+    height: 100%;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 24%));
+    gap: 14px;
+
+}
+
+.image {
+    /* margin-block: 20px; */
+    position: relative;
+    /* width: 20%; */
+    height: 70vh;
+    display: flex;
+    align-items: end;
+
+
+}
+
+.immg1 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg2 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg3 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg4 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-grid.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg5 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-from-above.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg6 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg7 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-curiosity.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.immg8 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-blend-mode: darken;
+    background: linear-gradient(to top, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/desktop/image-fisheye.jpg) no-repeat center center/cover;
+    /* background: center center/cover; */
+}
+
+.text-grid {
+    /* display: flex; */
+    /* align-items: center; */
+    /* background: rgba(0, 0, 0, 0.116);
+    background-blend-mode: darken; */
+    /* width: 70%; */
+    position: relative;
+    font-family: 'josefin sans', sans-serif;
+    color: var(--clr-White);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+footer {
+    background-color: var(--Black);
+    padding-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-footer {
+    color: var(--VeryDarkGray);
+}
+
+.first-side,
+.second-side {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.for-cover {
+    display: flex;
+    justify-content: end;
+}
+
+.cover {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hover {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.741);
+}
+
+.after-hero-mob-child {
+    display: none;
+}
+
+.color {
+    color: var(--Black);
+}
+
+.immg1,
+.immg2,
+.immg3,
+.immg4,
+.immg5,
+.immg6,
+.immg7,
+.immg7,
+.immg8 {
+    cursor: pointer;
+}
+
+.classic,
+.classicone,
+.classictwo,
+.classicthree,
+.classicfour,
+.classicfive,
+.classicsix,
+.classicseven {
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    background-color: var(--Black);
+    color: var(--clr-White);
+    cursor: pointer;
+}
+
+.for-border:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--clr-White);
+    cursor: pointer;
+}
+
+.for-two {
+    display: none;
+}
+
+@media (min-width:767px) and (max-width:1025px) {
+    nav {
+        height: 20vh;
+    }
+
+    .main-image {
+        background: rgba(0, 0, 0, 0.424) url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg) center center / cover;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-blend-mode: darken;
+        height: 65vh;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .anykind {
+        height: 65vh;
+    }
+
+    .after-text-head {
+        font-size: clamp(28px, 3vw, 60px);
+    }
+
+    .h1 {
+        width: 90%;
+    }
+
+    .div {
+        font-size: clamp(60px, 3vw, 70px);
+    }
+
+    .after-hero {
+        height: 70vh;
+    }
+
+    .after-image {
+        height: 99%;
+    }
+
+    .after-text-p {
+        font-size: 15px;
+    }
+
+    .after-heroo-child {
+        width: 95%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 49%));
+        gap: 14px;
+    }
+
+    .image {
+        height: 45vh;
+    }
+
+    .first-side,
+    .second-side {
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .first-side-child ul {
+        font-size: 12px;
+    }
+
+    .text-footer {
+        font-size: 10px;
+    }
+
+    .cover {
+        width: 90%;
+    }
+}
+
+@media (max-width:430px) {
+    nav {
+        height: 20vh;
+    }
+
+    .nav-child {
+        width: 90%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: var(--Black);
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+    }
+.nav-items ul{
+    padding-left: 30px;
+    flex-direction: column;
+    height: 80%;
+    gap: 30px;
+    font-family: 'josefin sans', sans-serif;
+    justify-content: center;
+    font-weight: 200;
+}
+.nav-items li {
+    height: auto;
+    font-size: clamp(30px,2vw,40px);
+    /* font-family: 'alata', sans-serif; */
+    font-family: 'josefin sans', sans-serif;
+    font-weight: 200;
+}
+
+    .hero-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h1 {
+        width: 90%;
+        align-items: center;
+        padding-bottom: 0px;
+        justify-content: center;
+    }
+
+    .div {
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .anykind {
+        height: 100vh;
+    }
+
+    .after-hero {
+        height: 100vh;
+    }
+
+    .after-hero-child {
+        display: none;
+    }
+
+    .hero-child {
+        width: 100%;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .mob-main-img {
+        background: rgba(0, 0, 0, 0.424) url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg) center center/cover;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-blend-mode: darken;
+        height: 100vh;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .after-hero-mob-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        /* height: 50vh; */
+        width: 100%;
+        position: relative;
+    }
+
+    .after-mob-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .after-mob-image img {
+        width: 90%;
+    }
+
+    .after-mob-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .after-mob-head {
+        font-size: clamp(33px, 3vw, 60px);
+        text-transform: uppercase;
+        font-family: 'josefin sans', sans-serif;
+        margin-block: 20px;
+        color: var(--Black);
+    }
+
+    .after-mob-p {
+        font-stretch: 150%;
+        line-height: 1.5;
+        color: var(--DarkGray);
+    }
+
+    .after-heroo-child {
+        padding-top: 50px;
+    }
+
+    .image {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .immmg1 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg) no-repeat center center/cover;
+    }
+
+    .immmg2 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg) no-repeat center center/cover;
+    }
+
+    .immmg3 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg) no-repeat center center/cover;
+    }
+
+    .immmg4 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-grid.jpg) no-repeat center center/cover;
+    }
+
+    .immmg5 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-from-above.jpg) no-repeat center center/cover;
+    }
+
+    .immmg6 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg) no-repeat center center/cover;
+    }
+
+    .immmg7 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-curiosity.jpg) no-repeat center center/cover;
+    }
+
+    .immmg8 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, var(--modified), rgba(0, 0, 0, 0)), url(/loopstudios-landing-page-main/images/mobile/image-fisheye.jpg) no-repeat center center/cover;
+    }
+.logo{
+    position: relative;
+    z-index: 50;
+}
+    .for-none {
+        display: none;
+    }
+    .close-menu{
+    display: block;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        height: 30px;
+        width: 30px;
+    }
+    .close-menu img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .immg1,
+    .immg2,
+    .immg3,
+    .immg4,
+    .immg5,
+    .immg6,
+    .immg7,
+    .immg8 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .after-heroo-child {
+        width: 93%;
+    }
+
+    .text-grid {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .for-two {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: none;
+
+    }
+
+    .after-heroo-first {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+   }
+.heading-befor-grid{
+    text-align: center;
+}
+    .for-two button {
+        border: 1px solid var(--Black);
+        width: 50%;
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-child{
+        flex-direction: column;
+        height: 70vh;
+        justify-content: space-evenly;
+    }
+    .first-side{
+        height: auto;
+        flex-direction: column;
+    }
+    .first-side  .first-side-child{
+        padding-bottom: 30px;
+    }
+    .first-side-child ul{
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .for-cover{
+        justify-content: center;
+        width: 100%;
+    }
+    .cover{
+        width: 75%;
+    }
+}

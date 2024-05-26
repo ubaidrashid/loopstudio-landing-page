@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="/loopstudios-landing-page-main/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-child">
+
+      <div class="logo">
+        <img src="/loopstudios-landing-page-main/images/logo.svg" alt="">
+      </div>
+      <div class="nav-items for-none">
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+        <div class="close-menu for-none" onclick="navClose()">
+          <img src="/loopstudios-landing-page-main/images/icon-close.svg" alt="">
+        </div>
+      </div>
+      <div class="menu" onclick="navBarHandler()">
+        <img src="/loopstudios-landing-page-main/images/icon-hamburger.svg" alt="">
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="main-child">
+      <div class="anykind">
+
+        <div class="main-image">
+        </div>
+        <div class="mob-main-img"></div>
+        <div class="hero">
+
+          <div class="hero-child">
+            <div class="h1">
+
+
+              <div class="div">
+                Immersive experiences that deliver
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="after-hero">
+        <div class="after-hero-mob-child">
+          <div class="after-mob-image">
+            <img src="/loopstudios-landing-page-main/images/mobile/image-interactive.jpg" alt="">
+          </div>
+          <div class="after-mob-text">
+            <div class="after-mob-head">
+              The leader in interactive VR
+
+            </div>
+            <div class="after-mob-p">
+              Founded in 2011, Loopstudios has been producing world-class virtual reality
+              projects for some of the best companies around the globe. Our award-winning
+              creations have transformed businesses through digital experiences that bind
+              to their brand.
+            </div>
+          </div>
+        </div>
+        <div class="after-hero-child">
+
+          <div class="after-image">
+
+          </div>
+          <div class="after-text">
+            <div class="after-text-head">
+
+              The leader in interactive VR
+            </div>
+            <div class="after-text-p">
+
+              Founded in 2011, Loopstudios has been producing world-class virtual reality
+              projects for some of the best companies around the globe. Our award-winning
+              creations have transformed businesses through digital experiences that bind
+              to their brand.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="after-heroo">
+        <div class="after-heroo-child">
+          <div class="after-heroo-first">
+            <div class="heading-befor-grid">
+              Our creations
+            </div>
+            <div class="button-befor-grid for-none">
+              <button>
+                See all
+              </button>
+            </div>
+          </div>
+          <div class="parent-grid">
+            <div class="grid">
+              <div class="image">
+                <div class="immmg1" onmouseover="hover()" onmouseleave="notHover()">
+                  <div class="classic"></div>
+                </div>
+                <div class="immg1 " onmouseover="hover()" onmouseleave="notHover()">
+                  <div class="classic"></div>
+                </div>
+                <div class="text-grid" onmouseover="hover()" onmouseleave="notHover()">
+                  <div>
+                    Deep
+                  </div>
+                  <div>
+                    earth
+                  </div>
+                </div>
+              </div>
+
+              <div class="image">
+                <div class="immmg2" onmouseover="hoverFor()" onmouseleave="notHoverFor()">
+                  <div class="classicone"></div>
+                </div>
+                <div class="immg2" onmouseover="hoverFor()" onmouseleave="notHoverFor()">
+                  <div class="classicone"></div>
+                </div>
+                <div class="text-grid two" onmouseover="hoverFor()" onmouseleave="notHoverFor()">
+                  <div>
+                    Night
+                  </div>
+                  <div>
+                    arcade
+                  </div>
+                </div>
+              </div>
+
+              <div class="image">
+                <div class="immmg3" onmouseover="hoverForTwo()" onmouseleave="notHoverForTwo()">
+                  <div class="classictwo"></div>
+                </div>
+                <div class="immg3" onmouseover="hoverForTwo()" onmouseleave="notHoverForTwo()">
+                  <div class="classictwo"></div>
+                </div>
+                <div class="text-grid three" onmouseover="hoverForTwo()" onmouseleave="notHoverForTwo()">
+                  <div>
+                    Soccer
+                  </div>
+                  <div>
+                    team VR
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <div class="immmg4" onmouseover="hoverForThree()" onmouseleave="notHoverForThree()">
+                  <div class="classicthree"></div>
+                </div>
+                <div class="immg4" onmouseover="hoverForThree()" onmouseleave="notHoverForThree()">
+                  <div class="classicthree"></div>
+                </div>
+                <div class="text-grid four" onmouseover="hoverForThree()" onmouseleave="notHoverForThree()">
+                  <div>
+                    The
+                  </div>
+                  <div>
+                    grid
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <div class="immmg5" onmouseover="hoverForFour()" onmouseleave="notHoverForFour()">
+                  <div class="classicfour"></div>
+                </div>
+                <div class="immg5" onmouseover="hoverForFour()" onmouseleave="notHoverForFour()">
+                  <div class="classicfour"></div>
+                </div>
+
+                <div class="text-grid five" onmouseover="hoverForFour()" onmouseleave="notHoverForFour()">
+                  <div>
+                    From up
+                  </div>
+                  <div>
+                    above VR
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <div class="immmg6" onmouseover="hoverForFive()" onmouseleave="notHoverForFive()">
+                  <div class="classicfive"></div>
+                </div>
+                <div class="immg6" onmouseover="hoverForFive()" onmouseleave="notHoverForFive()">
+                  <div class="classicfive"></div>
+                </div>
+                <div class="text-grid six" onmouseover="hoverForFive()" onmouseleave="notHoverForFive()">
+                  <div>
+                    Pocket
+                  </div>
+                  <div>
+                    borealis
+                  </div>
+                </div>
+              </div>
+              <div class="image" onmouseover="hoverForSix()" onmouseleave="notHoverForSix()">
+                <div class="immmg7">
+                  <div class="classicsix"></div>
+                </div>
+                <div class="immg7" onmouseover="hoverForSix()" onmouseleave="notHoverForSix()">
+                  <div class="classicsix"></div>
+                </div>
+                <div class="text-grid seven" onmouseover="hoverForSix()" onmouseleave="notHoverForSix()">
+                  <div>
+                    The
+                  </div>
+                  <div>
+                    curiosity
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <div class="immmg8" onmouseover="hoverForSeven()" onmouseleave="notHoverForSeven()">
+                  <div class="classicseven"></div>
+                </div>
+                <div class="immg8" onmouseover="hoverForSeven()" onmouseleave="notHoverForSeven()">
+                  <div class="classicseven"></div>
+                </div>
+                <div class="text-grid eight" onmouseover="hoverForSeven()" onmouseleave="notHoverForSeven()">
+                  <div>
+                    Make it
+                  </div>
+                  <div>
+                    fisheye
+                  </div>
+                </div>
+              </div>
+              <div class="button-befor-grid for-two">
+                <button>
+                  See all
+                </button>
+              </div>
+
+              <!--
+            -->
+              <!--
+   -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--
+-->
+  <footer>
+    <div class="footer-child">
+      <div class="first-side">
+        <div class="first-side-child">
+          <img src="/loopstudios-landing-page-main/images/logo.svg" alt="">
+        </div>
+        <div class="first-side-child">
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="second-side">
+        <div class="second-side-chlld for-cover">
+          <div class="cover">
+
+            <div class="for-border">
+
+              <img src="/loopstudios-landing-page-main/images/icon-facebook.svg" alt="">
+            </div>
+            <div class="for-border">
+
+              <img src="/loopstudios-landing-page-main/images/icon-twitter.svg" alt="">
+            </div>
+            <div class="for-border">
+
+              <img src="/loopstudios-landing-page-main/images/icon-pinterest.svg" alt="">
+            </div>
+            <div class="for-border">
+
+              <img src="/loopstudios-landing-page-main/images/icon-instagram.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="second-side-chlld">
+          <div class="text-footer">
+            © 2021 Loopstudios. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 
+  -->
+
+  <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  <script src="/loopstudios-landing-page-main/js/index.js"></script>
+</body>
+
+</html>
